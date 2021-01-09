@@ -17,7 +17,7 @@ namespace MyClassLib.WordOfTanks
 
         public static void CreateTanks(ref Tank[] tanks, int tanksNumber,string tankName)
         {
-            if(tanks != null)
+            if(tanks == null)
                 throw new ArgumentNullException();
             else
             {
